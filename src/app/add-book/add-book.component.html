@@ -1,0 +1,15 @@
+<h3>Add Book</h3>
+<form [formGroup]="addBookForm" (ngSubmit)="addBook()">
+  <div>
+    <input type="text" name="isbn" id="isbn" formControlName="isbn" placeholder="ISBN" />
+  </div>
+  <div>
+    <input type="text" name="title" id="title" formControlName="title" placeholder="Title" />
+  </div>
+  <div>
+    <input type="text" name="price" id="price" formControlName="price" placeholder="Price" />
+  </div>
+  <div>
+    <button type="submit">Add</button>
+  </div>
+</form>

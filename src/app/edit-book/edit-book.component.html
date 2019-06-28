@@ -1,0 +1,15 @@
+<h3>Update the Book</h3>
+<div *ngIf="book !== undefined">
+  <div>
+    <input type="text" placeholder="ISBN" [(ngModel)]="book.isbn" disabled />
+  </div>
+  <div>
+    <input type="text" placeholder="Title" [(ngModel)]="book.title" />
+  </div>
+  <div>
+    <input type="text" placeholder="Price" [(ngModel)]="book.price" />
+  </div>
+  <div>
+    <button (click)="updateBook()">Save</button>
+  </div>
+</div>
